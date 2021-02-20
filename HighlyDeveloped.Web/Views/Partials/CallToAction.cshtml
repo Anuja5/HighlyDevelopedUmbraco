@@ -1,0 +1,24 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@using ClientDependency.Core.Mvc
+@{
+    
+    
+    var homepage = Model.AncestorOrSelf<Home>();
+}
+
+
+<html>
+    <h1>
+        @Model.Value("calltoactiontitle")
+    </h1>
+    <p>
+        @Model.value("calltoactionText")
+    </p>
+    @{
+    var link = Model.Value<Link>("callToActionLink");
+    if (link != null)
+    {
+    <a href="@link.Url" target="@link.Target">@link.Name</a>
+    }
+}
+</html>

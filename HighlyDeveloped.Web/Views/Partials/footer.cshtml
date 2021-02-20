@@ -1,0 +1,33 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@using ClientDependency.Core.Mvc
+@{
+    
+    
+    var homepage = Model.AncestorOrSelf<Home>();
+}
+<Footer class="bg-dark">
+    <div class="container">
+        <div class=row>
+            <div class="col text-center py-4">
+                <ul class="list-inline-item">
+                    <li class="list-inline-item">
+                        <a href="#" target="_blank">
+    <i class="fab fa-twitter fa-2x text-white" aria-hidden="true"></i>
+  </a>
+                    </li>
+                     <li class="list-inline-item">
+                          <a href="#" target="_blank">
+   <i class="fab fa-linkedin fa-2x text-white" aria-hidden="true"></i>
+  </a>
+                    </li>
+                </ul>
+                <p class="text-white">Copyright &copy;Datetime.Now.Year Highly Developed</p>
+                
+                
+            </div>
+            </div>
+            
+      
+    </div>
+    
+</Footer>
